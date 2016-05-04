@@ -1,0 +1,27 @@
+* {
+  margin: 0 auto;
+}
+i { font-size: 24px; }
+/*-------------*/
+/*----Header---*/
+/*-------------*/
+
+header {
+  height: 80px;
+  background-color: #eee;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0 20px;
+}
+header i {}
+header .logo {
+  width: 200px;
+  padding: 20px 0;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.content {
+  margin-top: 80px;
+}
