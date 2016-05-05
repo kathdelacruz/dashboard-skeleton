@@ -309,8 +309,13 @@ SIDENAV HEADER:
   border-radius: 50%;
   height: 50px;
   object-fit: cover;
+  vertical-align: middle;
+  display: inline;
 }
-.info-profile { color: #fff; }
+.info-profile {
+  color: #fff;
+  vertical-align: middle;
+}
 .user-name {
   text-transform: uppercase;
   font-size: 15px;
