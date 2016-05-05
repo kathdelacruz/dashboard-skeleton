@@ -1,6 +1,3 @@
-* {
-  margin: 0 auto;
-}
 i { font-size: 24px; }
 
 
@@ -8,8 +5,9 @@ i { font-size: 24px; }
 /********* RESET *********/
 /*************************/
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  font-family: 'Roboto', 'sans-serif';
 }
 html, body, div, span, a, img, h1, h2, p, ul, li {
   background: transparent;
@@ -83,9 +81,9 @@ small {
 textarea, input[type="text"], input[type="number"], input[type="email"] { -webkit-appearance: none; }
 .left{ float: left; }
 .right{ float: right; }
-.align_left{ text-align: left; }
-.align_right{ text-align: right; }
-.align_center{ text-align: center; }
+.align-left{ text-align: left; }
+.align-right{ text-align: right; }
+.align-center{ text-align: center; }
 .helper{
   display: inline-block;
   height:100%;
@@ -106,7 +104,7 @@ textarea, input[type="text"], input[type="number"], input[type="email"] { -webki
   width: 100%;
 }
 .display-inline {
-  display: inline-block !important;
+  display: inline-block;
   *display: inline;
   zoom: 1;
   vertical-align: middle;
@@ -134,6 +132,7 @@ textarea, input[type="text"], input[type="number"], input[type="email"] { -webki
 GENERALES:
 #######################################
 */
+
 html, body{
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -150,54 +149,118 @@ html, body, input, textarea{
   color: #181818;
 }
 a, button{color: inherit; font: inherit; }
-a:hover{color: #4e4d4d; }
+a:hover{color: #DF570B; }
 h2{line-height: inherit; }
 h3{font-weight: 300; }
 .pt_0{padding-top: 0 !important; }
 .pb_0{padding-bottom: 0 !important; }
 .mt_0{margin-top: 0 !important; }
 .mb_0{margin-bottom: 0 !important; }
-body{padding-top: px; }
+body{padding-top: 90px; }
 
-
-/*-------------*/
-/*----Header---*/
-/*-------------*/
+/*
+#######################################
+HEADER:
+#######################################
+*/
 
 .toolbar {
   background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+  padding: 30px;
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 30px;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
 }
 .toolbar .bar-menu { margin-right: 25px; }
 .toolbar .logo img {
-  width: 200px;
+  width: 170px;
   text-align: center;
+  padding-left: 20px;
+  border-left: 1px solid #e7eaec;
 }
-body { padding-top: 100px; }
 .content {
   background-color: #F6F6F6;
   padding: 30px;
 }
 
-/*-------------*/
-/*-----Card----*/
-/*-------------*/
+/*
+#######################################
+MENU HEADER:
+#######################################
+*/
+.menu-header { display: none; }
+.menu-header-item {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+.menu-header-item:last-child { margin-right: 0; }
+.menu-header i { font-size: 20px; }
+.counter {
+  background-color: #f44336;
+  border-radius: 2px;
+  color: white;
+  padding: 1px 5px;
+  position: absolute;
+  top: -7px;
+  right: -8px;
+}
+i.counter {
+  font-size: 10px;
+  line-height: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-header { display: block; }
+  .menu-header-mobile { display: none; }
+}
+
+/*
+#######################################
+BREAD CRUMB:
+#######################################
+*/
+.bread-crumb {
+  padding: 15px 30px;
+  border-bottom: 1px solid #e7eaec;
+}
+.bread-crumb-item i { font-size: 14px; }
+.bread-crumb-item span, .bread-crumb-item a { padding-right: 15px; }
+.bread-crumb-item {
+  display: inline-block;
+  font-size: 14px;
+  padding-left: 10px;
+}
+.bread-crumb-item::after {
+  content: "/";
+  color: #ddd;
+}
+.bread-crumb-item:last-child span {
+  color: #000;
+  font-weight: 800;
+}
+.bread-crumb-item:last-child::after {
+  content: "";
+}
+
+
+/*
+#######################################
+CARD:
+#######################################
+*/
 
 .card {
   background-color: #fff;
   border-radius: 5px;
-  padding: 30px;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, .1);
+  padding: 30px;
 }
-
 .card-header {
-  padding-bottom: 10px;
-  margin-bottom: 30px;
   border-bottom: 3px solid #f4f4f4;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
 }
 .card-header h2 {
   font-size: 20px;
@@ -205,11 +268,8 @@ body { padding-top: 100px; }
   text-transform: uppercase;
 }
 .tagline {
+  color: #b1afb0;
   font-size: 15px;
-  color: #B1AFB0;
   font-weight: 800;
 }
-
-.card-content {
-  font-size: 16px;
-}
+.card-content { font-size: 16px; }

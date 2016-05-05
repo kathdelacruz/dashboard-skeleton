@@ -5,6 +5,8 @@
   <title>Dashboard</title>
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <link rel="stylesheet" href="css/icomoon/style.css">
+  <!-- Roboto font -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic,300' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <header class="toolbar">
@@ -17,9 +19,29 @@
           <img src="images/logo.png" alt="Logo">
         </a>
       </div>
-      <div class="display-table-cell align-right"></div>
+      <div class="display-table-cell align-right">
+        <ul class="display-inline menu-header">
+          <li class="menu-header-item"><a href="#"><i class="icon-home"></i></a></li>
+          <li class="menu-header-item"><a href="#"><i class="icon-connection"></i><i class="counter">0</i></a></li>
+          <li class="menu-header-item"><a href="#"><i class="icon-bubbles2"></i></a></li>
+          <li class="menu-header-item">
+            <a href="#">
+              <i class="icon-cog"></i>
+              <i class="counter">0</i>
+            </a>
+          </li>
+        </ul>
+        <i class="menu-header-mobile icon-menu"></i>
+      </div>
     </div>
   </header>
+  <div class="bread-crumb">
+    <ol>
+      <li class="bread-crumb-item"><a href="#"><i class="icon-home"></i></a></li>
+      <li class="bread-crumb-item"><span>Item 1</span></li>
+      <li class="bread-crumb-item"><span>Sub-Item 1</span></li>
+    </ol>
+  </div>
   <section class="content">
     <div class="card">
       <div class="card-header">
