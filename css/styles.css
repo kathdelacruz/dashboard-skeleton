@@ -171,7 +171,9 @@ HEADER:
   padding: 30px;
   position: fixed;
   top: 0;
-  width: 100%;
+  right: 0;
+  left: 250px;
+  width: auto;
 }
 .toolbar .bar-menu { margin-right: 25px; }
 .toolbar .logo img {
@@ -290,4 +292,34 @@ SIDENAV:
   top: 0;
   width: 250px;
   z-index: 10;
+}
+
+/*
+#######################################
+SIDENAV HEADER:
+#######################################
+*/
+.profile {
+  background-color: #a48ad5;
+  padding: 20px;
+  height: 90px;
+}
+.user-picture {
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
+  object-fit: cover;
+}
+.info-profile { color: #fff; }
+.user-name {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 16px;
+  display: block;
+}
+.user-role {
+  color: #ddd;
+  font-size: 14px;
+  line-height: 15px;
 }
