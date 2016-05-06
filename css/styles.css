@@ -157,7 +157,10 @@ h3{font-weight: 300; }
 .mt_0{margin-top: 0 !important; }
 .mb_0{margin-bottom: 0 !important; }
 body{padding-top: 90px; }
-.view-content { padding-left: 250px; }
+
+@media screen and (min-width: 960px) {
+  .view-content { padding-left: 250px; }
+}
 
 /*
 #######################################
@@ -172,7 +175,7 @@ HEADER:
   position: fixed;
   top: 0;
   right: 0;
-  left: 250px;
+  left: 0;
   width: auto;
 }
 .toolbar .bar-menu { margin-right: 25px; }
@@ -185,6 +188,10 @@ HEADER:
 .content {
   background-color: #F6F6F6;
   padding: 30px;
+}
+
+@media screen and (min-width: 960px) {
+  .toolbar { left: 250px; }
 }
 
 /*
@@ -241,7 +248,7 @@ BREAD CRUMB:
 }
 .bread-crumb-item:last-child span {
   color: #000;
-  font-weight: 800;
+  font-weight: 700;
 }
 .bread-crumb-item:last-child::after {
   content: "";
@@ -267,14 +274,13 @@ CARD:
 }
 .card-header h2 {
   font-size: 20px;
-  font-weight: 800;
   text-transform: uppercase;
 }
 .tagline {
   color: #b1afb0;
   font-size: 15px;
-  font-weight: 800;
 }
+.card-header h2, .tagline { font-weight: 700; }
 .card-content { font-size: 16px; }
 
 /*
@@ -284,6 +290,7 @@ SIDENAV:
 */
 
 .sidenav {
+  display: none;
   background-color: #30323f;
   bottom: 0;
   height: 100%;
@@ -292,6 +299,10 @@ SIDENAV:
   top: 0;
   width: 250px;
   z-index: 10;
+}
+
+@media screen and (min-width: 960px ) {
+  .sidenav { display: block; }
 }
 
 /*
@@ -328,3 +339,35 @@ SIDENAV HEADER:
   font-size: 14px;
   line-height: 15px;
 }
+
+/*
+#######################################
+SIDENAV MENU:
+#######################################
+*/
+.menu {
+  padding-top: 30px;
+}
+.menu-item a {
+  padding: 15px 30px;
+  display: block;
+  color: #98989F;
+  font-size: 18px;
+}
+.menu-item span {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 20px;
+  vertical-align: top;
+}
+.menu-item a:hover {
+  background-color: #1E202C;
+  color: white;
+}
+.menu-item i:first-child {
+  margin-right: 15px;
+  width: 25px;
+  text-align: center;
+}
+.menu-item i:last-child { float: right; }
