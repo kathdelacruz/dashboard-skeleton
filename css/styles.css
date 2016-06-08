@@ -1,6 +1,3 @@
-i { font-size: 24px; }
-
-
 /*************************/
 /********* RESET *********/
 /*************************/
@@ -142,21 +139,23 @@ html, body{
 html.active, body.active{min-height: 100%; height: 100%;}
 html.overflow, body.overflow{min-height: 100%; height: 100%; overflow: hidden;}
 html, body, input, textarea{
-  font-family: 'TitilliumWebRegular',
+  font-family: 'Roboto',
   sans-serif;
   font-size: 19px;
   line-height: 1.3em;
   color: #181818;
 }
-a, button{color: inherit; font: inherit; }
-a:hover{color: #DF570B; }
-h2{line-height: inherit; }
-h3{font-weight: 300; }
-.pt_0{padding-top: 0 !important; }
-.pb_0{padding-bottom: 0 !important; }
-.mt_0{margin-top: 0 !important; }
-.mb_0{margin-bottom: 0 !important; }
-body{padding-top: 90px; }
+a, button { color: inherit; font: inherit; }
+a:hover { color: #DF570B; }
+h2 { line-height: inherit; }
+h3 { font-weight: 300; }
+i { font-size: 24px; }
+.pt_0 { padding-top: 0 !important; }
+.pb_0 { padding-bottom: 0 !important; }
+.mt_0 { margin-top: 0 !important; }
+.mb_0 { margin-bottom: 0 !important; }
+body { padding-top: 91px; }
+.view-content { transition: all .2s ease; }
 
 @media screen and (min-width: 960px) {
   .view-content { padding-left: 220px; }
@@ -179,12 +178,14 @@ HEADER:
   left: 0;
   width: auto;
 }
-.toolbar.collapse { left: 66px; }
+
 .bar-menu svg rect { fill: #000; transition: all .4s ease;  }
-.bar-menu.active svg rect#bar_1 {
-  x: -8;
-  transition: all .4s ease; }
-.bar-menu.active svg rect#bar_2 { x: -4; transition: all .4s ease; }
+.bar-menu.active svg rect#bar_1 { x: -8; }
+.bar-menu.active svg rect#bar_2 { x: -4; }
+.bar-menu rect[id*="bar_"] {
+  transition: all .4s ease;
+}
+
 .toolbar .bar-menu { margin-right: 25px; }
 .toolbar .logo img {
   width: 170px;
@@ -199,6 +200,7 @@ HEADER:
 
 @media screen and (min-width: 960px) {
   .toolbar { left: 220px; }
+  .toolbar.collapse { left: 66px; }
 }
 
 /*
@@ -341,7 +343,7 @@ SIDENAV HEADER:
 .profile {
   background-color: #a48ad5;
   padding: 20px;
-  height: 90px;
+  height: 91px;
 }
 .user-picture {
   width: 50px;
@@ -382,6 +384,7 @@ SIDENAV MENU:
   display: block;
   color: #98989F;
   font-size: 18px;
+  cursor: pointer;
   fill: #98989F;
 }
 .menu-item svg {
@@ -419,21 +422,23 @@ SIDENAV MENU:
   border-left: 4px solid #a48ad5;
   position: absolute;
   height: 0;
-  transition: all .3s ease;
+  transition: all .2s ease;
 }
-.menu-item.active .line-left {
+.menu-item .line-left + .title-level.active {
   height: 100%;
 }
+.title-level.active,
 .menu-item.active { background-color: #1E202C; }
-.menu-item.active .title-level {
+.title-level.active {
   color: #fff;
   fill: #fff;
 }
-.menu-item.active svg {
+.title-level.active svg {
   transform: rotate(270deg);
   transition: all .35s ease;
 }
-.menu-item.active .second-level { display: block; }
-.menu-item.active .second-level a:hover {
-  color: #a48ad5;
+.title-level.active + .second-level,
+.menu-item.active .second-level {
+  display: block;
+  background-color: #1E202C;
 }

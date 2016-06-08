@@ -3,7 +3,7 @@ $(document).ready(function() {
 });
 
 function toggleActive () {
-  $('.menu-item').on('click', function() {
+  $('.title-level').on('click', function() {
     $(this).toggleClass('active');
   });
 
