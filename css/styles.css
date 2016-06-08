@@ -362,12 +362,21 @@ SIDENAV HEADER:
   font-size: 15px;
   font-weight: 700;
   line-height: 16px;
-  display: block;
+  margin-bottom: 5px;
 }
 .user-role {
   color: #ddd;
   font-size: 14px;
   line-height: 15px;
+}
+
+.user-name, .user-role {
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-left: 15px;
+  width: 115px;
+  overflow: hidden;
 }
 
 /*
