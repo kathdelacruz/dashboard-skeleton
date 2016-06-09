@@ -154,6 +154,7 @@ i { font-size: 24px; }
 .pb_0 { padding-bottom: 0 !important; }
 .mt_0 { margin-top: 0 !important; }
 .mb_0 { margin-bottom: 0 !important; }
+.mb_30 { margin-bottom: 30px; }
 body { padding-top: 91px; }
 .view-content { transition: all .2s ease; }
 .view-content { padding-left: 0; }
@@ -479,3 +480,72 @@ SIDENAV MENU:
   display: block;
   background-color: #1E202C;
 }
+
+
+
+/*
+#######################################
+FORMULARIO:
+#######################################
+*/
+
+/* Input effects */
+.group-form {
+  height: 45px;
+  margin-top: 60px;
+  position: relative;
+}
+
+input.input-type-1, input.input-type-2 {
+  border: none;
+  border-bottom: 1px solid #E1E0E1;
+  color: #4A4D4A;
+  display: block;
+  font-size: 16px;
+  font-weight: 300;
+  outline: 0;
+  padding: 10px 0;
+  width: 100%;
+}
+
+input:focus[type="password"], input:valid[type="password"] { font-size: 15px;  }
+
+input.input-type-1:focus~label, input.input-type-1:valid~label, .input-type-2~label {
+  top: -20px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #B4B2B5;
+  border-bottom: 0;
+}
+
+label {
+  color: #4A4D4A;
+  display: block;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.2em;
+  position: absolute;
+  top: 10px;
+  transition: 0.2s all;
+}
+
+.bar {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.bar:before {
+  background: #a48ad5;
+  content: '';
+  bottom: 1px;
+  height: 2px;
+  position: absolute;
+  transition: 0.2s all;
+  width: 0;
+}
+
+.bar:before { left: 0%; }
+input:focus~.bar:before, input:focus~.bar:after { width: 100%; }
+
+
