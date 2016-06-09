@@ -423,6 +423,7 @@ SIDENAV MENU:
 .menu-item svg {
   transform: rotate(180deg);
   float: right;
+  transition: all .35s ease;
 }
 .menu-item span {
   font-size: 15px;
