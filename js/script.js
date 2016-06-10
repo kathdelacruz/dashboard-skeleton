@@ -5,6 +5,7 @@ $(document).ready(function() {
 function toggleActive () {
   $('.title-level').on('click', function() {
     $(this).toggleClass('active');
+    $(this).siblings('.line-left').toggleClass('active');
   });
 
   $('.bar-menu').on('click', function() {
