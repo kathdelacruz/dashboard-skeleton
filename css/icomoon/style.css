@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'icomoon';
-    src:    url('fonts/icomoon.eot?w58fl7');
-    src:    url('fonts/icomoon.eot?w58fl7#iefix') format('embedded-opentype'),
-        url('fonts/icomoon.ttf?w58fl7') format('truetype'),
-        url('fonts/icomoon.woff?w58fl7') format('woff'),
-        url('fonts/icomoon.svg?w58fl7#icomoon') format('svg');
+    src:    url('fonts/icomoon.eot?lpurhu');
+    src:    url('fonts/icomoon.eot?lpurhu#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?lpurhu') format('truetype'),
+        url('fonts/icomoon.woff?lpurhu') format('woff'),
+        url('fonts/icomoon.svg?lpurhu#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -50,5 +50,29 @@
 }
 .icon-circle-right:before {
     content: "\ea42";
+}
+.icon-file-text:before {
+    content: "\e922";
+}
+.icon-file-empty:before {
+    content: "\e924";
+}
+.icon-menu3:before {
+    content: "\e9bf";
+}
+.icon-warning:before {
+    content: "\ea07";
+}
+.icon-table2:before {
+    content: "\ea71";
+}
+.icon-insert-template:before {
+    content: "\ea72";
+}
+.icon-paragraph-center:before {
+    content: "\ea78";
+}
+.icon-delicious:before {
+    content: "\eacd";
 }
 
