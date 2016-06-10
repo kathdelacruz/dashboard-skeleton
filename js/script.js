@@ -14,7 +14,8 @@ function toggleActive () {
     $('.toolbar').toggleClass('collapse');
 
     // validate click on bar-menu
-    if ($('.sidenav').hasClass('collapse')) {
+    var mediaquery = window.matchMedia("(min-width: 768px)");
+    if ($('.sidenav').hasClass('collapse') &&  mediaquery.matches) {
       $('.menu-item').hover(
         function() { $(this).addClass('active'); },
         function() { $(this).removeClass('active');

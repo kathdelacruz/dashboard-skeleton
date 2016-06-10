@@ -23,6 +23,8 @@ html, body, div, span, a, img, h1, h2, p, ul, li {
   vertical-align: baseline;
 }
 
+body { background-color: #F6F6F6; }
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -184,7 +186,7 @@ HEADER:
   left: 0;
   width: auto;
 }
-
+.bar-menu { cursor: pointer; }
 .bar-menu svg rect { fill: #000; transition: all .4s ease;  }
 .bar-menu.active svg rect#bar_1 { x: -8; }
 .bar-menu.active svg rect#bar_2 { x: -4; }
@@ -256,6 +258,7 @@ BREAD CRUMB:
 .bread-crumb {
   padding: 15px 30px;
   border-bottom: 1px solid #e7eaec;
+  background-color: #fff;
 }
 .bread-crumb-item i { font-size: 14px; }
 .bread-crumb-item span, .bread-crumb-item a { padding-right: 15px; }
