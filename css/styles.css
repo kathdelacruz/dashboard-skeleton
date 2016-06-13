@@ -657,3 +657,37 @@ MEDIA QUERIES GRID
 /* /////////////////
 FIN MEDIA QUERIES
 //////////////////*/
+
+
+
+/*
+#######################################
+TABLES:
+#######################################
+*/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #eee;
+  border-bottom: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+tbody tr:nth-child(2n) {
+  background-color: #f6f6f6;
+}
+
+@media screen and (max-width: 768px) {
+  table { overflow: auto; }
+}
+
+
