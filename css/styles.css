@@ -559,8 +559,13 @@ GRIDS:
 */
 
 .row {
-  overflow: hidden;
   width: 100%;
+}
+
+.row:after {
+  clear: both;
+  content: "";
+  display: block;
 }
 
 .column {
