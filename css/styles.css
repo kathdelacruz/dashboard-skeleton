@@ -681,9 +681,7 @@ table {
 
 th { text-transform: uppercase; }
 
-th, td {
-  padding: 10px;
-}
+th, td { padding: 10px; }
 
 /*End general*/
 
@@ -694,27 +692,41 @@ th, td {
   border-bottom: 1px solid #ddd;
 }
 
-.td-bg th {
-  font-size: 13px;
-}
-
+.td-bg th { font-size: 13px; }
 .td-bg tbody tr:nth-child(2n) { background-color: #f6f6f6; }
 
 /*End table background */
 
 /*Table border line*/
 
-.td-line th, .td-line tr {
-  border-bottom: 1px solid #eee;
-}
-
-.td-line tbody tr:hover {
-  background-color: #f6f6f6;
-}
-
-.td-line tr:last-child {
-  border: none;
-}
+.td-line th, .td-line tr { border-bottom: 1px solid #eee; }
+.td-line tbody tr:hover { background-color: #f6f6f6; }
+.td-line tr:last-child { border: none; }
 
 /*End table border line*/
+
+
+
+/*
+#######################################
+Alerts:
+#######################################
+*/
+
+.alert-container {
+  color: #504e4e;
+  font-size: 14px;
+  line-height: 16px;
+}
+.alert-container i {
+  font-size: 18px;
+  padding-right: 10px;
+  width: 20px;
+}
+
+.success { background-color: #ddf7de; color: #7aab7b; }
+.important { background-color: #E1F5FE; color: #0288D1; }
+.warning { background-color: #fff8e3; color: #dabc63; }
+.failed { background-color: #ffe1df; color: #dc726b; }
+
 
