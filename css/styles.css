@@ -666,28 +666,55 @@ TABLES:
 #######################################
 */
 
-table {
-  width: 100%;
-  border-collapse: collapse;
+
+/*General*/
+.table-content {
+  overflow: auto;
 }
 
-thead {
+table {
+  border-collapse: collapse;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+}
+
+th { text-transform: uppercase; }
+
+th, td {
+  padding: 10px;
+}
+
+/*End general*/
+
+/*Table background color*/
+
+.td-bg thead {
   background-color: #eee;
   border-bottom: 1px solid #ddd;
 }
 
-th, td {
-  padding: 10px;
-  text-align: center;
-  font-size: 14px;
+.td-bg th {
+  font-size: 13px;
 }
 
-tbody tr:nth-child(2n) {
+.td-bg tbody tr:nth-child(2n) { background-color: #f6f6f6; }
+
+/*End table background */
+
+/*Table border line*/
+
+.td-line th, .td-line tr {
+  border-bottom: 1px solid #eee;
+}
+
+.td-line tbody tr:hover {
   background-color: #f6f6f6;
 }
 
-@media screen and (max-width: 768px) {
-  table { overflow: auto; }
+.td-line tr:last-child {
+  border: none;
 }
 
+/*End table border line*/
 
