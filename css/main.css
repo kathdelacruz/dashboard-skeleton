@@ -186,6 +186,7 @@ HEADER:
   right: 0;
   left: 0;
   width: auto;
+  z-index: 10;
 }
 .bar-menu { cursor: pointer; }
 .bar-menu svg rect { fill: #000; transition: all .4s ease;  }
