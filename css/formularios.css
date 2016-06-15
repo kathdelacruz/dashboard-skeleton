@@ -1,0 +1,74 @@
+/*
+#######################################
+FORMULARIO:
+#######################################
+*/
+
+/* Input effects */
+.group-form {
+  height: 45px;
+  margin-top: 60px;
+  position: relative;
+}
+
+.form-3 .group-form {
+  margin-top: 30px;
+  position: static;
+}
+
+input.input-type-1, input.input-type-2, input.input-type-3 {
+  border: none;
+  border-bottom: 1px solid #E1E0E1;
+  color: #4A4D4A;
+  display: block;
+  font-size: 15px;
+  font-weight: 300;
+  outline: 0;
+  padding: 10px 0;
+  width: 100%;
+}
+
+input:focus[type="password"], input:valid[type="password"] { font-size: 14px;  }
+
+input.input-type-1:focus~label, input.input-type-1:valid~label, .input-type-2~label {
+  top: -20px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #B4B2B5;
+  border-bottom: 0;
+}
+
+label {
+  color: #4A4D4A;
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.2em;
+  position: absolute;
+  top: 10px;
+  transition: 0.2s all;
+}
+
+.bar {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.bar:before {
+  background: #a48ad5;
+  content: '';
+  bottom: 1px;
+  height: 2px;
+  position: absolute;
+  transition: 0.2s all;
+  width: 0;
+}
+
+.bar:before { left: 0%; }
+input:focus~.bar:before, input:focus~.bar:after { width: 100%; }
+
+.input-icon {
+  font-size: 15px;
+  width: 35px;
+}

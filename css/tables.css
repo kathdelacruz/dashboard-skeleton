@@ -1,0 +1,44 @@
+/*
+#######################################
+TABLES:
+#######################################
+*/
+
+
+/*General*/
+.table-content {
+  overflow: auto;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+}
+
+th { text-transform: uppercase; }
+
+th, td { padding: 10px; }
+
+/*End general*/
+
+/*Table background color*/
+
+.td-bg thead {
+  background-color: #eee;
+  border-bottom: 1px solid #ddd;
+}
+
+.td-bg th { font-size: 13px; }
+.td-bg tbody tr:nth-child(2n) { background-color: #f6f6f6; }
+
+/*End table background */
+
+/*Table border line*/
+
+.td-line th, .td-line tr { border-bottom: 1px solid #eee; }
+.td-line tbody tr:hover { background-color: #f6f6f6; }
+.td-line tr:last-child { border: none; }
+
+/*End table border line*/

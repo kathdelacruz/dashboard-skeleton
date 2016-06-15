@@ -1,0 +1,21 @@
+/*
+#######################################
+Alerts:
+#######################################
+*/
+
+.alert-container {
+  color: #504e4e;
+  font-size: 14px;
+  line-height: 16px;
+}
+.alert-container i {
+  font-size: 18px;
+  padding-right: 10px;
+  width: 20px;
+}
+
+.success { background-color: #ddf7de; color: #7aab7b; }
+.important { background-color: #E1F5FE; color: #0288D1; }
+.warning { background-color: #fff8e3; color: #dabc63; }
+.failed { background-color: #ffe1df; color: #dc726b; }

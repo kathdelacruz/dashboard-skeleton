@@ -163,40 +163,82 @@
     <section class="content">
       <div class="card mb_30">
         <div class="card-header">
-          <h2>Input 1</h2>
-          <span class="tagline">Label movible</span>
+          <h2>Basic input</h2>
+          <span class="tagline">Inputs con placeholder e íconos</span>
         </div>
         <div class="card-content">
-          <form action="">
-            <div class="group-form">
-              <input class="input-type-1" type="text" required id="username">
-              <div class="bar"></div>
-              <label class="label-type-1" for="username">Username</label>
+          <form action="" class="form-3">
+            <div class="row column-2 group-form">
+              <div class="column">
+                <input class="input-type-3" type="text" required id="username" placeholder="Username">
+                <div class="bar"></div>
+              </div>
+              <div class="column">
+                <input class="input-type-3" type="password" required id="password" placeholder="Password">
+                <span class="bar"></span>
+              </div>
             </div>
-            <div class="group-form">
-              <input class="input-type-1" type="password" required id="password">
-              <span class="bar"></span>
-              <label class="label-type-1" for="password">Password</label>
+            <div class="row column-2 group-form">
+              <div class="column">
+                <input class="input-type-3" type="text" required id="username" placeholder="Username">
+                <div class="bar"></div>
+              </div>
+              <div class="column">
+                <input class="input-type-3" type="password" required id="password" placeholder="Password">
+                <span class="bar"></span>
+              </div>
             </div>
           </form>
         </div>
       </div>
       <div class="card">
         <div class="card-header">
-          <h2>Input 2</h2>
-          <span class="tagline">El label se mantiene arriba</span>
+          <h2>Floating label</h2>
+          <span class="tagline">Ejemplo básico para inputs con floating label</span>
         </div>
         <div class="card-content">
           <form action="">
-            <div class="group-form">
-              <input class="input-type-2" type="text" required id="username">
-              <div class="bar"></div>
-              <label class="label-type-2" for="username">Username</label>
+            <div class="row column-2 group-form">
+              <div class="display-table column">
+                <i class="display-table-cell input-icon icon-users"></i>
+                <div class="display-table-cell">
+                  <input class="input-type-1" type="text" required id="username">
+                  <div class="bar"></div>
+                  <label class="label-type-1" for="username">Username</label>
+                </div>
+              </div>
+              <div class="column display-table">
+                <i class="input-icon icon-info display-table-cell"></i>
+                <div class="display-table-cell">
+                  <input class="input-type-1" type="password" required id="password">
+                  <span class="bar"></span>
+                  <label class="label-type-1" for="password">Password</label>
+                </div>
+              </div>
             </div>
-            <div class="group-form">
-              <input class="input-type-2" type="password" required id="password">
-              <span class="bar"></span>
-              <label class="label-type-2" for="password">Password</label>
+            <div class="row column-2 group-form">
+              <div class="column">
+                <input class="input-type-1" type="text" required id="username">
+                <div class="bar"></div>
+                <label class="label-type-1" for="username">Username</label>
+              </div>
+              <div class="column">
+                <input class="input-type-1" type="password" required id="password">
+                <span class="bar"></span>
+                <label class="label-type-1" for="password">Password</label>
+              </div>
+            </div>
+            <div class="row column-2 group-form">
+              <div class="column">
+                <input class="input-type-2" type="text" required id="username">
+                <div class="bar"></div>
+                <label class="label-type-2" for="username">Username</label>
+              </div>
+              <div class="column">
+                <input class="input-type-2" type="password" required id="password">
+                <span class="bar"></span>
+                <label class="label-type-2" for="password">Password</label>
+              </div>
             </div>
           </form>
         </div>
