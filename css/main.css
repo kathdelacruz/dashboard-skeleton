@@ -303,6 +303,7 @@ SIDENAV:
   display: block;
 }
 
+.collapse .arrow { display: none; }
 
 @media screen and (min-width: 960px ) {
   /*.sidenav { display: block; }*/
