@@ -29,7 +29,7 @@ GRIDS:
   width: 100%;
 }
 
-.column h2 { text-align: center; }
+.grid-example .column h2 { text-align: center; }
 .total .column { width: 100%; }
 
 /* ////////////////
