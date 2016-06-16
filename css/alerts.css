@@ -8,6 +8,7 @@ Alerts:
   color: #504e4e;
   font-size: 14px;
   line-height: 16px;
+  padding: 10px;
 }
 .alert-container i {
   font-size: 18px;
