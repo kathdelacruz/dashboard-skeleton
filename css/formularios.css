@@ -72,3 +72,45 @@ input:focus~.bar:before, input:focus~.bar:after { width: 100%; }
   font-size: 15px;
   width: 35px;
 }
+
+
+
+/*Button*/
+.button-bg {
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  opacity: .7;
+  padding: 10px;
+  text-align: center;
+}
+
+.button-bg.success { background-color: #2ecc71; }
+.button-bg.important { background-color: #3498db; }
+.button-bg.warning { background-color: #f1c40f; }
+.button-bg.failed { background-color: #e74c3c; }
+
+.button-bg:hover {
+  opacity: 1;
+}
+
+.button-ln {
+  background: transparent;
+  border-radius: 5px;
+  border: 1px solid;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 10px;
+  text-align: center;
+}
+
+.button-ln:hover {
+  color: white;
+  transition: all .2s ease;
+}
+.button-ln.success:hover { background-color: #2ecc71; }
+.button-ln.important:hover { background-color: #3498db; }
+.button-ln.warning:hover { background-color: #f1c40f; }
+.button-ln.failed:hover { background-color: #e74c3c; }
