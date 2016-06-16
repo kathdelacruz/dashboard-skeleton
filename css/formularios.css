@@ -78,13 +78,14 @@ input:focus~.bar:before, input:focus~.bar:after { width: 100%; }
 /*Button*/
 .button-bg {
   background-color: black;
-  border-radius: 5px;
+  border-radius: 3px;
   color: white;
   cursor: pointer;
   font-weight: 700;
   opacity: .7;
   padding: 10px;
   text-align: center;
+  box-shadow: 0 2px 3px #bbb;
 }
 
 .button-bg.success { background-color: #2ecc71; }
@@ -98,7 +99,7 @@ input:focus~.bar:before, input:focus~.bar:after { width: 100%; }
 
 .button-ln {
   background: transparent;
-  border-radius: 5px;
+  border-radius: 3px;
   border: 1px solid;
   cursor: pointer;
   font-weight: 700;
