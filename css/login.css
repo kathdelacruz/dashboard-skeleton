@@ -65,3 +65,37 @@
 @media screen and (max-width: 500px) {
   .login-container { width: 80%; }
 }
+
+
+/* SELECTS */
+
+.caja {
+  border-bottom: 1px solid #ccc;
+  height:30px;
+  overflow: hidden;
+  position:relative;
+  width: 100%;
+}
+select {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  height: 30px;
+  padding: 5px;
+  width: calc( 100% + 20px);
+}
+select:focus{ outline: none; }
+
+.caja::after{
+  content:"\025be";
+  display:table-cell;
+  height:30px;
+  padding-top:7px;
+  pointer-events: none;
+  position:absolute;
+  right:0px;
+  text-align:center;
+  top:0;
+  width:30px;
+}
